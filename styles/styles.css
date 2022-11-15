@@ -1,0 +1,115 @@
+:root {
+    --light-color: #65C3CB;
+    --dark-color: #123563;
+    --third-color: #0F5B60;
+    --forth-color: #4fffdc;
+}
+
+h1 {
+    color: var(--dark-color);
+    text-align: center;
+}
+
+body {
+    margin: 10px;
+    background: var(--dark-color) url('./2939786.jpg') fixed no-repeat;
+}
+
+
+#main-form {
+    padding: 20px;
+    background-color: white;
+    margin: auto;
+    height: auto;
+    width: 562px;
+    border-radius: 12px;
+    /* text-align: center; */
+    box-shadow: blue 2px 2px 11px;
+    border: 2px solid var(--light-color);
+    box-sizing: border-box;
+}
+
+#main-form input,
+#main-form label {
+    margin: 18px;
+}
+
+#main-form label {
+    font-size: 20px;
+    color: var(--dark-color);
+}
+
+#main-form input {
+    color: var(--dark-color);
+    padding: 10px;
+    width: 90%;
+    border: none;
+    border-bottom: solid 2px var(--dark-color);
+    display: block;
+    outline: none;
+}
+
+#main-form input:focus,
+#main-form input:hover,
+#operation-selection:hover,
+#operation-selection::selection {
+    border: none;
+    border-bottom: solid 2px var(--light-color);
+}
+
+#operation-selection {
+    font-size: 20px;
+    border-bottom: solid 2px var(--dark-color);
+    outline: none;
+    border: none;
+    border-bottom: solid 2px var(--dark-color);
+}
+
+#operation-selection option {
+    color: var(--dark-color);
+}
+
+#button-container {
+    text-align: right;
+}
+
+#main-form #button-container button {
+    background-color: var(--third-color);
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+#main-form #button-container button:hover {
+    background-color: var(--light-color);
+    color: black;
+}
+
+#test,
+#cipher {
+    color: var(--dark-color);
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.copy-btn {
+    background: white;
+    border: var(--third-color) 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+    float: right;
+    text-align: center;
+}
+
+.copy-btn:hover {
+    cursor: pointer;
+}

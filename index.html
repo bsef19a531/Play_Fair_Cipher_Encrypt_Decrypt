@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Playfair-Cipher</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./script/formHandler.js"></script>
+    <script src="./script/cipherHandler.js"></script>
+    <script src="./script/cipherProcessor.js"></script>
+</head>
+
+<body>
+    <div>
+        <form id="main-form" onsubmit="formHandler(event)">
+            <h1>PlayFair-Cipher ♟</h1>
+            <hr>
+            <hr>
+            <label for="key">Key</label>
+            <input id="key-input" type="text" name="key" placeholder="Enter Key" onkeypress=" characterFilter(event)" />
+            <br>
+
+            <label for="text-field">Enter Plain Text/ Cipher</label>
+            <input id="text-field" type="text" name="text-field" placeholder="Enter Text"
+                onkeypress="characterFilter1(event)" required />
+
+            <br>
+
+            <label>Operation</label>
+            <select id="operation-selection">
+                <option value="encrypt">Encrypt</option>
+                <option value="decrypt">Decrypt</option>
+            </select>
+
+            <br>
+            <div id="button-container">
+                <button type="submit">Convert</button>
+            </div>
+            <div id="test">
+
+            </div>
+            <div id="cipher">
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
